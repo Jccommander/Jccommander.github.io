@@ -1,0 +1,77 @@
+/* Change to the body tag to make the background on all pages appear grey */
+body {
+    background:#C0C0C0;
+}
+
+/* Change all headers to appear a set color */
+
+h1, h2, h3, h4, h5 {
+    color:steelblue;
+}
+
+/* Footer class for all pages */
+.footer {
+    position: static;
+    bottom: 0px;
+    width: 100%;
+    height:10%;
+    padding:15px 0;
+    margin-top: 30px;
+    background-color:grey;
+    color:white;
+    text-align:center;
+    border-top:15px solid lightblue;
+}
+
+/* Class for the nav bar to display the home button in blue */
+.nav-home {
+    background-color: lightblue;
+}
+
+/* Classes for the landing page */
+
+.landing-text-box {
+    padding:20px;
+    background-color:white;
+    color:grey;
+    border: 5px solid lightblue;
+    overflow:auto;
+}
+
+/* Classes for visualization pages */
+
+.main-visual-box {
+    background-color:white;
+    color:grey;
+    border: 5px solid lightblue;
+    padding:20px;
+    overflow:auto;
+}
+
+.chart-visual-box {
+    background-color:white;
+    color:grey;
+    border: 5px solid lightblue;
+    padding:20px;
+    margin-top:30px;
+    margin-right:10px;
+    overflow:auto;
+}
+
+/* Class for comparisons page */
+
+.comparison-box {
+    background-color:white;
+    color:grey;
+    border:5px solid lightblue;
+    padding:20px;
+    overflow:auto;
+}
+
+/* Media query for changing the navbar coloration when the screen resolution is smaller than 600 px */
+
+@media (max-width: 600px) {
+    .my-navbar-small {
+        background-color:lightblue;
+    }
+}
