@@ -3,10 +3,10 @@
 <html lang="us-en">
 <head>
     <!-- Set the title for the page, the meta charset, and link the CSS style sheets -->
-    <title>Welcome to the Data Vizard!</title>
+    <title>Cloudiness Visualization</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>
 <!-- Open the body tag -->
 <body>
@@ -45,51 +45,55 @@
       </div>
     </nav>
     
-    <!-- Above is stock for all pages, below is individual code for this page! -->
-    
-    <!-- div container for the explanatory paragraph -->
+    <!-- Above is stock for all pages, below is individual code for this page -->
+
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-7">
-          <div class="landing-text-box">
-            <h2>Summary: Latitude vs. X</h2>
-            <hr><br>
-            <p>
-              <img src="static/images/fig1.png" height="200" style="float: left; margin-right:30px; margin-bottom:30px">
-              The objective of this project was to analyze the changing patterns in weather as one approaches
-              the equator. To accomplish this, we used the OpenWeatherMap API to retrieve data from over 500
-              cities in order to compare and contrast their differences based on their latitude.
+        <div class="col-sm-12 col-md-8">
+          <div class="main-visual-box">
+            <h2>Latitude vs. Cloudiness</h2><hr>
+            <img src="../static/images/fig3.png" height="470">
+            <p>This chart displays the relationship between latitude and cloudiness, specifically the amount
+              of overhead cloud cover in the city in question. This metric is measured in a percentage, and
+              as it can be seen in the data, the method for collecting this data rounds it to flat number. This
+              unfortunately causes the data to appear uniform, and makes it difficult to determine a trend. One
+              can see that most cities tend towards the extremes, either 0% or 100%, but that there isn't much
+              to split higher versus lower latitude in terms of cloud cover. It seems randomly distributed,
+              and is thus most likely a weak, or nonexistant, relationship.
               <br><br>
-              After gathering our desired data, we created visualizations using MatPlotLib to analyze trends across
-              several desired variables, namely temperature, cloudiness, wind speed and humidity to visually show the
-              relationship between latitude and weather.
-              <br><br>
-              This site provides the visualizations and data, along with explanations of trends for each graph. To see
-              these visualizations and their explanations, please click on the desired graph on the right, or navigate
-              to the desired page using the dropdown menu above labeled "plots".
+              It would perhaps benefit this research to explore how data for cloud cover is recorded, so as to
+              account for its strange shape, or to potentially find a different dataset that has more comprehensive
+              and finely collected cloud cover data.
             </p>
           </div>
         </div>
 
-    <!-- div container for the visualization links -->
-        <div class="col-sm-12 col-md-5">
-          <div class="landing-text-box">
-            <h2>Visualizations</h2>
-            <hr><br>
-            <a href="#">
-              <img src="static/images/fig1.png" height="135" style="margin-right:5px; margin-bottom:10px;">
-            </a>
-            <a href="#">
-                <img src="static/images/fig2.png" height="135" style="margin-left:5px; margin-bottom:10px;">
-            </a>
-            <br>
-            <a href="#">
-                <img src="static/images/fig3.png" height="135" style="margin-right:5px; margin-top:10px;">
-            </a>
-            <a href="#">
-                <img src="static/images/fig4.png" height="135" style="margin-left:5px; margin-top:10px;">
-            </a>
+        <div class="col-sm-12 col-md-4">
+          <div class="chart-visual-box">
+            <h3>Visualization Navigator</h3> <hr> <!-- Note: Horizontal Ruler -->
+            <div class="col-sm-3 col-md-6">
+              <a href="#">
+              <img src="../static/images/fig1.png" height="100" style="margin-left:-15px; margin-bottom:5px;">
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="#">
+              <img src="../static/images/fig2.png" height="100" style="margin-left:-15px; margin-bottom:5px;">
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="#">
+              <img src="../static/images/fig3.png" height="100" style="margin-left:-15px; margin-top:5px; border: 3px solid lightblue;">
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="#">
+              <img src="../static/images/fig4.png" height="100" style="margin-left:-15px; margin-top:5px;">
+              </a>
+            </div>
+            <p>Click on a chart above to move to its page</p>
           </div>
+
         </div>
       </div>
     </div>

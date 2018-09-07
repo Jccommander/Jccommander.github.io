@@ -3,10 +3,10 @@
 <html lang="us-en">
 <head>
     <!-- Set the title for the page, the meta charset, and link the CSS style sheets -->
-    <title>Welcome to the Data Vizard!</title>
+    <title>Data Comparisons</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>
 <!-- Open the body tag -->
 <body>
@@ -46,49 +46,28 @@
     </nav>
     
     <!-- Above is stock for all pages, below is individual code for this page! -->
-    
-    <!-- div container for the explanatory paragraph -->
+
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-7">
-          <div class="landing-text-box">
-            <h2>Summary: Latitude vs. X</h2>
-            <hr><br>
-            <p>
-              <img src="static/images/fig1.png" height="200" style="float: left; margin-right:30px; margin-bottom:30px">
-              The objective of this project was to analyze the changing patterns in weather as one approaches
-              the equator. To accomplish this, we used the OpenWeatherMap API to retrieve data from over 500
-              cities in order to compare and contrast their differences based on their latitude.
-              <br><br>
-              After gathering our desired data, we created visualizations using MatPlotLib to analyze trends across
-              several desired variables, namely temperature, cloudiness, wind speed and humidity to visually show the
-              relationship between latitude and weather.
-              <br><br>
-              This site provides the visualizations and data, along with explanations of trends for each graph. To see
-              these visualizations and their explanations, please click on the desired graph on the right, or navigate
-              to the desired page using the dropdown menu above labeled "plots".
-            </p>
-          </div>
-        </div>
-
-    <!-- div container for the visualization links -->
-        <div class="col-sm-12 col-md-5">
-          <div class="landing-text-box">
-            <h2>Visualizations</h2>
-            <hr><br>
-            <a href="#">
-              <img src="static/images/fig1.png" height="135" style="margin-right:5px; margin-bottom:10px;">
-            </a>
-            <a href="#">
-                <img src="static/images/fig2.png" height="135" style="margin-left:5px; margin-bottom:10px;">
-            </a>
-            <br>
-            <a href="#">
-                <img src="static/images/fig3.png" height="135" style="margin-right:5px; margin-top:10px;">
-            </a>
-            <a href="#">
-                <img src="static/images/fig4.png" height="135" style="margin-left:5px; margin-top:10px;">
-            </a>
+        <div class="col-md-12">
+          <div class="comparison-box">
+            <h1>Comparison: Latitude vs. X</h1><hr> <!-- Note: Horizontal Ruler -->
+            <div class="col-sm-12 col-md-6">
+              <h2>Temperature</h2>
+              <img src="../static/images/fig1.png" height="300" style="margin-bottom:10px">
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <h2>Humidity</h2>
+              <img src="../static/images/fig2.png" height="300" style="margin-bottom:10px">
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <h2>Cloudiness</h2>
+              <img src="../static/images/fig3.png" height="300" style="margin-top:10px">
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <h2>Wind Speed</h2>
+              <img src="../static/images/fig4.png" height="300" style="margin-top:10px">
+            </div>
           </div>
         </div>
       </div>
@@ -98,7 +77,7 @@
     <div class="footer">
       <p>© Copyright Coding Bootcamp 2018 &ensp;<span class="glyphicon glyphicon-education"></span></p>
     </div>
-    <!-- Add necessary bootstrap javascript elements to allow for dropdown menus -->
+    <!-- Add necessary bootstrap javascript elements to allow for dropdown menus! -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

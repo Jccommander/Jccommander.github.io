@@ -3,10 +3,10 @@
 <html lang="us-en">
 <head>
     <!-- Set the title for the page, the meta charset, and link the CSS style sheets -->
-    <title>Welcome to the Data Vizard!</title>
+    <title>Wind Speed Visualization</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>
 <!-- Open the body tag -->
 <body>
@@ -45,51 +45,55 @@
       </div>
     </nav>
     
-    <!-- Above is stock for all pages, below is individual code for this page! -->
-    
-    <!-- div container for the explanatory paragraph -->
+    <!-- Above is stock for all pages, below is individual code for this page -->
+
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-7">
-          <div class="landing-text-box">
-            <h2>Summary: Latitude vs. X</h2>
-            <hr><br>
-            <p>
-              <img src="static/images/fig1.png" height="200" style="float: left; margin-right:30px; margin-bottom:30px">
-              The objective of this project was to analyze the changing patterns in weather as one approaches
-              the equator. To accomplish this, we used the OpenWeatherMap API to retrieve data from over 500
-              cities in order to compare and contrast their differences based on their latitude.
+        <div class="col-sm-12 col-md-8">
+          <div class="main-visual-box">
+            <h2>Latitude vs. Wind Speed</h2><hr>
+            <img src="../static/images/fig4.png" height="470">
+            <p>In this graph, latitude is compared to wind speed, with wind speed being tracked in miles
+              per hour. As it can be seen, wind speed tends towards the lower side of the graph, with a
+              handful of strong values interspersed. While the relationship is not one to one, there is a
+              visible trend, in that wind speed seems to be slower the closer one is to the equator, and higher
+              the closer one is to the poles. Also, wind speeds appear to be faster in the northern hemisphere
+              than in the southern hemisphere, though this may be due to the fact that several cities in the northern
+              hemisphere recorded extremely high values.
               <br><br>
-              After gathering our desired data, we created visualizations using MatPlotLib to analyze trends across
-              several desired variables, namely temperature, cloudiness, wind speed and humidity to visually show the
-              relationship between latitude and weather.
-              <br><br>
-              This site provides the visualizations and data, along with explanations of trends for each graph. To see
-              these visualizations and their explanations, please click on the desired graph on the right, or navigate
-              to the desired page using the dropdown menu above labeled "plots".
+              While the relationship is not perfect, and data is spread thoroughly across the graph, there is 
+              a natural U-shape to the data which certainly indicates further data collection would be worthwhile,
+              and might establish an interesting correlation between latitude and wind speed.
             </p>
           </div>
         </div>
 
-    <!-- div container for the visualization links -->
-        <div class="col-sm-12 col-md-5">
-          <div class="landing-text-box">
-            <h2>Visualizations</h2>
-            <hr><br>
-            <a href="#">
-              <img src="static/images/fig1.png" height="135" style="margin-right:5px; margin-bottom:10px;">
-            </a>
-            <a href="#">
-                <img src="static/images/fig2.png" height="135" style="margin-left:5px; margin-bottom:10px;">
-            </a>
-            <br>
-            <a href="#">
-                <img src="static/images/fig3.png" height="135" style="margin-right:5px; margin-top:10px;">
-            </a>
-            <a href="#">
-                <img src="static/images/fig4.png" height="135" style="margin-left:5px; margin-top:10px;">
-            </a>
+        <div class="col-sm-12 col-md-4">
+          <div class="chart-visual-box">
+            <h3>Visualization Navigator</h3> <hr> <!-- Note: Horizontal Ruler -->
+            <div class="col-sm-3 col-md-6">
+              <a href="#">
+              <img src="../static/images/fig1.png" height="100" style="margin-left:-15px; margin-bottom:5px;">
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="#">
+              <img src="../static/images/fig2.png" height="100" style="margin-left:-15px; margin-bottom:5px;">
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="#">
+              <img src="../static/images/fig3.png" height="100" style="margin-left:-15px; margin-top:5px;">
+              </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+              <a href="#">
+              <img src="../static/images/fig4.png" height="100" style="margin-left:-15px; margin-top:5px; border: 3px solid lightblue;">
+              </a>
+            </div>
+            <p>Click on a chart above to move to its page</p>
           </div>
+
         </div>
       </div>
     </div>
